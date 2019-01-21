@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:weightSum="10"
+android:background="#000000"
+xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/imgBookDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/book_cover"/>
+
+        <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+<TextView
+android:text="Tên Sách"
+android:textColor="#ffffff"
+android:textStyle="bold"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="2"/>
+<TextView
+android:layout_weight="1"
+android:textColor="#ffffff"
+android:id="@+id/txtTenSach"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Ten Sach"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:weightSum="3"
+android:orientation="horizontal">
+
+    <TextView
+    android:text="Tác Giả"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"/>
+
+    <TextView
+    android:layout_weight="1"
+    android:id="@+id/txtTacGia"
+    android:textColor="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tac Gia"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:weightSum="3"
+android:orientation="horizontal">
+
+<TextView
+android:text="Nhà Xuất Bản"
+android:textStyle="bold"
+android:textColor="#ffffff"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="2"/>
+<TextView
+android:layout_weight="1"
+android:id="@+id/txtNXB"
+android:textColor="#ffffff"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Nha Xuat Ban"/>
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_weight="1"
+android:layout_height="match_parent"
+android:weightSum="3"
+android:orientation="horizontal">
+
+<TextView
+android:text="Thể Loại"
+android:textStyle="bold"
+android:textColor="#ffffff"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="2"/>
+<TextView
+android:layout_weight="1"
+android:textColor="#ffffff"
+android:id="@+id/txtTheLoai"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="The Loai"/>
+</LinearLayout>
+
+
+</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/txtMoTa"
+    android:textColor="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Mo ta"/>
+
+
+</LinearLayout>

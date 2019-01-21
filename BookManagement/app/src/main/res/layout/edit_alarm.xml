@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/edit_img_btn_cancel"
+            android:layout_width="50dp"
+            android:background="@android:color/transparent"
+            android:padding="20dp"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TimePicker
+            android:id="@+id/edit_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:descendantFocusability="blocksDescendants"
+            android:focusableInTouchMode="false"
+            android:headerBackground="#000000"
+            android:headerTimeTextAppearance="@color/colorPrimaryDark"
+            android:numbersBackgroundColor="#000000"
+            android:numbersInnerTextColor="#ffffff"
+            android:numbersSelectorColor="#a6a4a4"
+            android:numbersTextColor="#ffffff"
+            android:timePickerMode="clock"
+            android:layout_weight="13">
+
+        </TimePicker>
+        <ImageButton
+            android:id="@+id/edit_img_btn_ok"
+            android:layout_width="50dp"
+            android:padding="20dp"
+            android:src="@drawable/ic_check_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edit_select_day"
+        android:background="@drawable/border_tab"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Lặp lại"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/edit_selected_day"
+            android:textColor="#ffffff"
+            android:text="Hàng ngày  >"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/select_ring"
+        android:background="@drawable/border_tab"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Nhạc chuông"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/edit_selected_ring"
+            android:text="Tên nhạc  >"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/border_tab"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Rung"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/sw_vibrate_edit"
+            android:textColor="#ffffff"
+            android:checked="true"
+            android:switchMinWidth="60dp"
+            android:thumbTint="@drawable/switch_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:text="Title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_cancel_alarm"
+            android:layout_marginTop="30dp"
+            android:text="00:00"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"
+            android:background="@drawable/round_button"/>
+
+        <SeekBar
+            android:id="@+id/sk_turn_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:max="100"
+            android:layout_marginBottom="40dp"
+            android:thumb="@drawable/custom_thumb_seekbar"
+            android:progressDrawable="@drawable/custom_track_seekbar"/>
+
+        <TextView
+            android:layout_above="@+id/sk_turn_off"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:text="Trượt sang phải để tắt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo nhắc nhở"
+        android:layout_margin="3dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_margin="3dp"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"/>
+    <Button
+        android:id="@+id/btnEdit"
+        android:textAllCaps="false"
+        android:layout_margin="3dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa"/>
+
+</LinearLayout>

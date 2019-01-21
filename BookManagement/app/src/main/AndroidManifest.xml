@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quand.bookmanagement">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.AlarmingActivity">
+        </activity>
+        <activity android:name=".Activity.AddAlarm"></activity>
+        <activity android:name=".Activity.EditAlarmActivity"></activity>
+        <activity android:name=".Activity.DetailBookActivity"></activity>
+        <activity android:name=".Activity.AddBookActivity"></activity>
+        <activity android:name=".Activity.EditBookActivity"></activity>
+        <receiver android:name=".Receiver.AlarmReceiver"></receiver>
+        <service android:name=".Service.AlarmService"
+            android:enabled="true"></service>
+    </application>
+
+</manifest>

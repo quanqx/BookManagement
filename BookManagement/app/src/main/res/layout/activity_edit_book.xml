@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <EditText
+        android:id="@+id/editNameBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Tên sách"/>
+    <EditText
+        android:id="@+id/editAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Tác giả"/>
+    <EditText
+        android:id="@+id/editPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:hint="Nhà xuất bản"/>
+    <EditText
+        android:id="@+id/editCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Thể loại"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSelectImg"
+                android:layout_width="100dp"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Chọn ảnh" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="Camera" />
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/imgSelectBook"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/book_cover" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btnOkBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:layout_marginStart="40dp"
+                android:text="Lưu" />
+
+            <Button
+                android:id="@+id/btnCancelBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:layout_gravity="right"
+                android:layout_marginEnd="40dp"
+                android:text="Hủy" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
